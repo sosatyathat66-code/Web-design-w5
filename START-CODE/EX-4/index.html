@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h1>Dashboard</h1>
+
+      <nav aria-label="Main navigation">
+        <a class="active" href="#overview">Overview</a>
+        <a href="#projects">Projects</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#activity">Activity</a>
+      </nav>
+    </aside>
+
+    <main>
+      <header class="page-header">
+        <div>
+          <h2>Welcome back, Satya</h2>
+          <p>Here is a summary of your work.</p>
+        </div>
+        <button type="button">Add project</button>
+      </header>
+
+      <section class="stats" id="overview" aria-label="Dashboard statistics">
+        <article class="card stat-card">
+          <p>Active projects</p>
+          <strong>8</strong>
+          <small>2 due this week</small>
+        </article>
+
+        <article class="card stat-card">
+          <p>Completed tasks</p>
+          <strong>24</strong>
+          <small>6 completed today</small>
+        </article>
+
+        <article class="card stat-card">
+          <p>Team members</p>
+          <strong>3</strong>
+          <small>SeavFou, Sambath and Satya</small>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="card projects" id="projects">
+          <div class="card-header">
+            <h3>Project progress</h3>
+            <a href="#projects">View all</a>
+          </div>
+
+          <div class="project-row">
+            <div class="project-info">
+              <strong>Website redesign</strong>
+              <span>Due Friday</span>
+            </div>
+            <div class="progress">
+              <span class="progress-bar progress-80"></span>
+            </div>
+            <span class="project-percent">80%</span>
+          </div>
+
+          <div class="project-row">
+            <div class="project-info">
+              <strong>Mobile application</strong>
+              <span>Due next week</span>
+            </div>
+            <div class="progress">
+              <span class="progress-bar progress-60"></span>
+            </div>
+            <span class="project-percent">60%</span>
+          </div>
+
+          <div class="project-row">
+            <div class="project-info">
+              <strong>Marketing</strong>
+              <span>Due November 20</span>
+            </div>
+            <div class="progress">
+              <span class="progress-bar progress-40"></span>
+            </div>
+            <span class="project-percent">40%</span>
+          </div>
+        </article>
+
+        <article class="card" id="tasks">
+          <div class="card-header">
+            <h3>Today’s tasks</h3>
+          </div>
+
+          <ul class="task-list">
+            <li><input type="checkbox" id="task-1"><label for="task-1">Review homepage design</label></li>
+            <li><input type="checkbox" id="task-2"><label for="task-2">Prepare team meeting</label></li>
+            <li><input type="checkbox" id="task-3"><label for="task-3">Send weekly report</label></li>
+          </ul>
+        </article>
+
+        <article class="card activity" id="activity">
+          <div class="card-header">
+            <h3>Recent activity</h3>
+          </div>
+
+          <ul>
+            <li><span>Sambath completed a task</span><time>10 minutes ago</time></li>
+            <li><span>Satya uploaded a file</span><time>35 minutes ago</time></li>
+            <li><span>SeavFou added a comment</span><time>1 hour ago</time></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

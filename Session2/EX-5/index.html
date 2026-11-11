@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 5 - Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">StudySpace</a>
+    <nav aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#assignments">Assignments</a>
+    </nav>
+    <div class="profile" aria-label="Student profile">
+      <span class="avatar">SS</span>
+      <span>SoSatya</span>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="welcome">
+      <div>
+        <p>THURSDAY, NOVEMBER 5</p>
+        <h1>Good morning, SoSatya</h1>
+        <span>Study with Sambath and SeavFou. You have three tasks due this week.</span>
+      </div>
+      <a href="#assignments">View assignments</a>
+    </section>
+
+    <section class="summary" aria-label="Study summary">
+      <article><span>Current GPA</span><strong>3.7</strong><small>Up from 3.5</small></article>
+      <article><span>Attendance</span><strong>92%</strong><small>46 of 50 classes</small></article>
+      <article><span>Tasks finished</span><strong>14</strong><small>4 this week</small></article>
+      <article><span>Active courses</span><strong>4</strong><small>Semester 1</small></article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel schedule">
+        <div class="panel-header">
+          <div><span class="label">TODAY</span><h2>Class schedule</h2></div>
+          <time datetime="2026-11-05">November 5</time>
+        </div>
+
+        <div class="class-row">
+          <time datetime="09:00">09:00</time>
+          <div><strong>Web Development</strong><span>Room 204 · Mr. Dara</span></div>
+          <span class="status">Physical Class</span>
+        </div>
+        <div class="class-row">
+          <time datetime="11:00">11:00</time>
+          <div><strong>Database Systems</strong><span>Room 110 · Ms. Lina</span></div>
+          <span class="status">Physical Class</span>
+        </div>
+        <div class="class-row">
+          <time datetime="14:30">14:30</time>
+          <div><strong>English Communication</strong><span>Ms. Jessica</span></div>
+          <span class="status">Online Class</span>
+        </div>
+      </article>
+
+      <article class="panel assignments" id="assignments">
+        <div class="panel-header">
+          <div><span class="label">TO DO</span><h2>Assignments</h2></div>
+          <span>3 remaining</span>
+        </div>
+
+        <label class="task">
+          <input type="checkbox">
+          <span><strong>CSS Grid lab</strong><small>Due tomorrow</small></span>
+        </label>
+        <label class="task">
+          <input type="checkbox">
+          <span><strong>Database diagram</strong><small>Due November 8</small></span>
+        </label>
+        <label class="task">
+          <input type="checkbox">
+          <span><strong>English presentation</strong><small>Due November 10</small></span>
+        </label>
+      </article>
+
+      <article class="panel course-panel" id="courses">
+        <div class="panel-header">
+          <div><span class="label">SEMESTER 1</span><h2>Course progress</h2></div>
+          <a href="#courses">View courses</a>
+        </div>
+
+        <div class="course-grid">
+          <div class="course-card">
+            <span>WD</span>
+            <div><strong>Web Development</strong><small>8 of 10 lessons</small></div>
+            <div class="progress"><span class="progress-80"></span></div>
+          </div>
+          <div class="course-card">
+            <span>DB</span>
+            <div><strong>Database Systems</strong><small>6 of 10 lessons</small></div>
+            <div class="progress"><span class="progress-60"></span></div>
+          </div>
+          <div class="course-card">
+            <span>EN</span>
+            <div><strong>English Communication</strong><small>7 of 10 lessons</small></div>
+            <div class="progress"><span class="progress-70"></span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel study-group">
+        <span class="label">STUDY GROUP</span>
+        <h2>Team members</h2>
+        <div class="members">
+          <span class="member"><b>SF</b> SeavFou</span>
+          <span class="member"><b>SB</b> Sambath</span>
+          <span class="member"><b>SS</b> SoSatya</span>
+        </div>
+        <button type="button">Open group chat</button>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
